@@ -37,3 +37,36 @@ header h1{
     justify-content: space-around;
     background-color: #47f11d;
 }
+/* ------------sessao---------------- */
+.footer{
+    height: 117px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #9EADBA;
+    background-color: #DFE6ED;  
+}
+.footer h2{
+    margin-left: 14px;
+    color: #293845;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+}
+.imgSessao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 89px;
+    margin-left: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+.imgSessao img{
+    width: 48px;
+    height: 72px;
+}
+.horario{
+    background-color: #293845;
+}
