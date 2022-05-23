@@ -5,9 +5,9 @@ export default function Lugar({status, children}){
 
         <Assento  className={status === true? "indisponivel" : "disponivel" } onClick={() => {
             console.log(status)
-            if(status === false){
-                className= `${selecionado}`
-            }
+            // if(status === false){
+            //     className= `${selecionado}`
+            // }
             } }>
             {children}
         </Assento>
