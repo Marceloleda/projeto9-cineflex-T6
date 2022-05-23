@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import {Link} from "react-router-dom";
+import React from "react";
+
 
 
 export default function ConteinerFilms(){
@@ -15,7 +17,9 @@ export default function ConteinerFilms(){
     }, [])
     return (
         <>
-            <h2>Selecione o filme</h2>
+            <div className="categoria">
+                <h2>Selecione o filme</h2>
+            </div>
             <div className="conteiner">
                 {filmes.map(filme => {
                     const film = filme.posterURL;
@@ -23,7 +27,7 @@ export default function ConteinerFilms(){
                     return (
                         <>
                             <div className="imgFilme">
-                                <Link to={`/sessoes/${id}`}>
+                                <Link to={`/filme/${id}`}>
                                     <img src={film} alt="descrition"/>
                                 </Link>
                             </div>

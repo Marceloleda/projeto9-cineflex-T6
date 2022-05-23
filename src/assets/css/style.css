@@ -1,16 +1,27 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
 body{
     background-color: #FFFFFF;
     margin: 0 auto;    
     width: 375px;
 }
 header{
+    position: fixed;
+    height: 67px;
+    width: 375px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
     background-color: #C3CFD9;
+}
+.nomeTopo h1{
+    font-family: 'Roboto', sans-serif;
     height: 67px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-header h1{
     font-size: 34px;
     color: #E8833A;
 }
@@ -31,15 +42,19 @@ header h1{
 }
 .conteiner{
     height: 100%;
-    margin-top: 102px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #47f11d;
 }
-/* ------------sessao---------------- */
+/* ------------footer---------------- */
 .footer{
+    /* position: fixed; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+
     height: 117px;
+    width: 375px;
     display: flex;
     align-items: center;
     border: 1px solid #9EADBA;
@@ -48,7 +63,6 @@ header h1{
 .footer h2{
     margin-left: 14px;
     color: #293845;
-    font-weight: 400;
     font-size: 26px;
     line-height: 30px;
 }
@@ -67,6 +81,45 @@ header h1{
     width: 48px;
     height: 72px;
 }
-.horario{
-    background-color: #293845;
+
+/* ==================Sessoes & Horarios====================== */
+.conteinerSessoes{
+    margin-left: 24px;
+    margin-top: 50px;
+}
+.dia{
+    font-family: 'Roboto', sans-serif;
+    color: #293845;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+
+}
+.horas{
+    display: flex;
+}
+.hour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 8px;
+    margin-left: 1px ;
+    margin-top: 22px;
+    margin-bottom: 23px;
+    width: 83px;
+    height: 43px;
+    background: #E8833A;
+    color: #FFFFFF;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+}
+/* ================de baixo do topo da tela inicial- categoria ============== */
+.categoria{
+    padding-top: 120px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;  
+    letter-spacing: 0.04em;
+    color: #293845;
 }

@@ -1,8 +1,11 @@
+import './assets/css/style.css'
 export default function Topo(){
     return(
         <>
             <header>
-                <h1>CINEFLEX</h1>
+                <div className='nomeTopo'>
+                    <h1>CINEFLEX</h1>
+                </div>
             </header>
         </>
     );
