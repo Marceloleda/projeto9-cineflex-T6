@@ -1,5 +1,6 @@
 import {useParams} from "react-router-dom";
 import axios from "axios";
+import {Link} from "react-router-dom";
 import { useState, useEffect } from "react";
 import Footer from "./footer";
 import React from "react";
@@ -11,16 +12,7 @@ export default function Sessao(props){
     const [sessao, setSessao] = useState([]);
 
     console.log(sessao)
-    // sessao.map(map => {
-    //     const didi = map
-    //     console.log(didi)
-    // })
-    // const days = sessao.days;
-    // days.map((film) => {
-    //     console.log(film)
-    // })
-   
-    
+     
     useEffect(() => {
         const promise = axios.get(`https://mock-api.driven.com.br/api/v5/cineflex/movies/${idfilm}/showtimes`);
         promise.then(response => {
@@ -47,11 +39,14 @@ export default function Sessao(props){
                             </div>
                             <div className="horas">                 
                                 {hora.map(hour => {
-                                    console.log(hour)
+                                    const idAssentos = hour.id;
+                                    const hora = hour.name;
                                     return(
-                                        <div className="hour">
-                                            {hour.name}
-                                        </div>
+                                        <Link to={`./assentos/${idAssentos}`}>
+                                            <div className="hour">
+                                                {hora}
+                                            </div>
+                                        </Link>
                                     );
                                 })}
                                 

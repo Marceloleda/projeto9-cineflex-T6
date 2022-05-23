@@ -92,7 +92,6 @@ header{
     color: #293845;
     font-size: 20px;
     letter-spacing: 0.02em;
-
 }
 .horas{
     display: flex;
@@ -122,4 +121,51 @@ header{
     justify-content: center;  
     letter-spacing: 0.04em;
     color: #293845;
+}
+/* ======================assentos=========================== */
+.seats{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    width: 327px;
+    margin-left: 24px;
+}
+.lugar{
+    width: 26px;
+    height: 26px;
+    margin-top: 18px;
+    margin-left: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.description{
+    display: flex;
+    margin-top:18px ;
+    justify-content: space-around;
+}
+.selecionado{
+    background: #8DD7CF;
+    border: 1px solid #1AAE9E;
+}
+.disponivel{
+    background: #C3CFD9;
+    border: 1px solid #808F9D;
+}
+.indisponivel{
+    background: #FBE192;
+    border: 1px solid #F7C52B;
+}
+.exemplo{
+    width: 26px;
+    height: 26px;
+    margin-top: 18px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.status{
+    display: flex;
+    justify-content: space-around;
 }
